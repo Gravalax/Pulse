@@ -1,0 +1,77 @@
+.carousel {
+    padding: 82px 0;
+
+    &__inner {
+        min-width: 0;
+        max-width: 750px;
+        margin: 0 auto;
+
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        .slick-arrow {
+            width: 30px;
+            height: 51px;
+
+            font-size: 0; //delete text in arrow
+
+            border: none;
+
+            position: absolute;
+            top: 50%;
+            z-index: 10;
+  
+            transform: translateY(-50%);
+
+            &.slick-prev {
+                left: -66px;
+                transform: translateX(-50%);
+
+                background: url('../img/icons/chevron-left.png') center center / 100% no-repeat;
+            }
+
+            &.slick-next {
+                right: -70px;
+                transform: translateX(50%);
+
+                background: url('../img/icons/chevron-right.png') center center / 100% no-repeat;
+            }
+        }
+
+        .slick-dots {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            list-style: none;
+
+            li {
+                margin-right: 40px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                &.slick-active {
+                    button {
+                        background-color: #f36060;
+                    }
+                }
+            }
+
+            button {
+                width: 16px;
+                height: 16px;
+
+                background-color: #ffffff;
+                border-radius: 50%;
+
+
+                font-size: 0;
+            }
+        }
+    }
+}

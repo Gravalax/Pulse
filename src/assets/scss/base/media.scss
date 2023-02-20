@@ -1,0 +1,500 @@
+
+
+/* Media*/
+@media (min-width: 1200px) {
+
+}
+
+@media (max-width: 1199.9px) {
+	.promo {
+		&__wrapper {
+			align-items: center;
+		}
+	}
+
+	.header {
+		&__official {
+			margin-right: 40px;
+		}
+	}
+
+	.catalog {
+		&-item {
+			width: 300px;
+			margin-bottom: 20px;
+		}
+	}
+
+	.reviews {
+		margin-bottom: calc($var__mbReviews + 50px);
+	}
+
+	.footer {
+
+		&__line-red {
+			display: block;
+		}
+
+		&__info {
+			top: -50px;
+		}
+	}
+}
+
+@media (max-width: 991.9px) {
+	.header {
+		&__official {
+			margin-right: 10px;
+		}
+	}
+
+	.promo {
+		&__title {
+			font-size: 33px;
+		}
+
+		&__subtitle {
+			font-size: 18px;
+		}
+
+		&__icon {
+			font-size: 13px;
+		}
+	}
+
+	.advantages {
+		padding: 60px 0;
+		&__wrapper {
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+
+		&__item {
+			padding-bottom: 20px;
+			margin-bottom: 20px;
+			border-bottom: 2px dotted #b3b3b3;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.consultation {
+		min-height: 560px;
+		padding: 60px 0;
+		&__desc {
+			margin-left: 60px;
+		}
+
+		.feed-form {
+			margin-left: 60px;
+		}
+	}
+	
+	.carousel {
+		&__inner {
+			max-width: 550px;
+		}
+	}
+
+	.title {
+		&_left {
+			width: 600px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 50px;
+			
+			font-size: 26px;
+			text-align: center;
+		}
+	}
+
+	.reviews {
+		margin-bottom: calc($var__mbReviews + 100px);
+	}
+
+	.footer {
+		&__info {
+			top: -100px;
+		}
+	}
+}
+
+@media (max-width: 767.9px) {
+	$var__mbReviews: 50px;
+
+	.header {
+		&__official {
+			display: none;
+		}
+	}
+
+	.promo {
+		&__icon {
+			img {
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	.advantages {
+		padding: 60px 0;
+
+		&__wrapper {
+			flex-flow: column nowrap;
+			
+			justify-content: space-around;
+		}
+
+		&__item {
+			padding-bottom: 20px;
+			margin-bottom: 20px;
+			border-bottom: 2px dotted #b3b3b3;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.consultation {
+		min-height: 560px;
+		padding: 60px 0;
+		&__desc {
+			margin-left: 0;
+			margin-right: 0;
+
+			text-align: center;
+		}
+
+		.feed-form {
+			margin: 0 auto;
+
+			input {
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	.catalog {
+		&__content {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+	
+	.reviews {
+		.reviews__item {
+			align-items: center;
+		}
+	}
+	.title {
+		font-size: 28px;
+		&_left {
+			width: auto;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 50px;
+			
+			font-size: 23px;
+			text-align: center;
+		}
+	}
+	.advantages__title {
+		margin-bottom: 35px;
+	}
+	
+	.catalog__title {
+		margin-bottom: 35px;
+	}
+	
+	.reviews__title {
+		margin-bottom: 35px;
+	}
+
+
+}
+
+@media (max-width: 575.9px) {
+	$var__mbReviews: 40px;
+
+	.promo {
+		padding-bottom: 40px;
+		&__title {
+			font-size: 23px;
+			text-align: center;
+		}
+
+		&__subtitle {
+			margin-bottom: 30px;
+
+			font-size: 17px;
+			text-align: center;
+		}
+
+		&__icons {
+			width: auto;
+			margin-bottom: 40px;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		&__icon {
+			margin: 0 30px 20px;
+			padding: 10px;
+			border-bottom: 1px solid #000;
+		}
+
+		&__link {
+			font-size: 14px;
+		}
+	}
+
+	.header {
+		margin-bottom: 60px;
+		&__phone {
+			font-size: 16px;
+			font-weight: 500;
+		}
+	}
+
+	.advantages {
+		padding: 40px 0;
+
+		&__title {
+			margin-bottom: 40px;
+
+			text-align: center;
+		}
+
+		&__item {
+			img {
+				width: 50px;
+				height: 50px;
+				margin-bottom: 10px;
+			}
+		}
+
+		&__subtitle {
+			margin-bottom: 8px;
+
+			text-align: center;
+		}
+	}
+
+	.consultation {
+		min-height: 445px;
+		padding: 40px 0;
+		&__desc {
+			display: none;
+		}
+
+		.feed-form {
+			margin: 0 auto;
+
+			input {
+				height: 45px;
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	.carousel {
+		padding: 40px 0;
+	}
+	
+	.catalog {
+		&__tabs {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&__tab {
+			& + & {
+				margin-top: 15px;
+			}
+		}
+		
+	}
+
+	
+	.reviews {
+		margin-bottom: calc($var__mbReviews + 270px);
+		&__item {
+			align-items: center;
+		}
+	}
+
+	.footer {
+		&__info {
+			width: 100%;
+			top: -270px;
+		}
+		&__social-item {
+			width: 40px;
+			height: 40px;
+
+			span {
+				font-size: 21px;
+			}
+		}
+	}
+
+	.title {
+		font-size: 23px;
+		&_left {
+			width: auto;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 50px;
+
+			text-align: center;
+		}
+		&.catalog__title {
+			margin-bottom: 30px;
+		}        
+	}
+	.advantages__title {
+		margin-bottom: 35px;
+	}
+		.reviews__title {
+		margin-bottom: 40px;
+	}
+
+	
+}
+
+@media (max-width: 479.9px) {
+	.header {
+		&__logo {
+			margin: 0;
+			bottom: 0;
+		}
+		
+		&__contacts {
+			display: none;
+		}
+	}
+
+	.consultation {
+		.feed-form {
+			input {
+				margin-left: auto;
+				margin-right: auto;
+				width: 90%;
+			}
+		}
+	}
+
+	.catalog {
+	   padding-bottom: 40px;
+
+		&__tab {
+			font-size: 14px;
+			font-weight: 700;
+
+			&_active {
+				align-items: center;
+			}
+		}
+		&-item {
+			width: 250px;
+
+			&__content {
+				padding-right: 20px;
+				&_active {
+					padding-right: 0;
+				}
+			}
+
+			&__footer {
+				flex-direction: column;
+			}
+
+			&__prices {
+				margin-bottom: 20px;
+				display: flex;
+				justify-content: space-between;
+			}
+
+			&__old-price {
+				padding-top: 5px;
+			}
+		}
+	}    
+
+	.reviews {
+		margin-bottom: calc($var__mbReviews + 270px);
+
+		&__item {
+			display: block;
+			margin-bottom: 0;
+
+			& + & {
+				margin-top: 30px;
+				padding-top: 30px;
+				border-top: #646464 dotted 3px;
+			}
+
+			img {
+				width: 77px;
+				height: 77px;
+				margin-right: 20px;
+				margin-left: calc(25% - calc(77px + 20px));
+				float: left;
+
+				border: #646464 2px solid;
+				border-radius: 50%;
+			}
+		}
+		&__name {
+			padding-top: 8px;
+		}
+
+		&__marathon {
+			margin-bottom: 25px;
+		}
+	}
+
+	.button {
+		&_tab {
+			margin: 0 auto;
+		}
+	}
+}
+
+@media (max-width: 390px) {
+	.reviews {
+		margin-bottom: calc($var__mbReviews + 270px);
+
+		&__item {
+			display: block;
+			margin-bottom: 0;
+
+			& + & {
+				margin-top: 25px;
+				padding-top: 25px;
+				border-top: #646464 dotted 3px;
+			}
+
+			img {
+				width: 64px;
+				height: 64px;
+				margin: 0 20px 0px 10px;
+			}
+		}
+
+		&__name {
+			padding-top: 0;
+		}
+
+		&__marathon {
+			margin-bottom: 15px;
+		}
+	}
+
+	.footer {
+		&__social {
+			justify-content: space-around;
+		}
+	}
+}
